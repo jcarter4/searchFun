@@ -4,7 +4,7 @@ from os import system
 
 ###########################################################################################################
 #  Author: Johnny Carter                                                                                  #
-#  Version: 1.0.0                                                                                         #
+#  Version: 1.0.1                                                                                         #
 #  Brief Description: This program is for searching integer lists for certain integers, each function is  #
 #  callable when the script is imported by another script.                                                #
 ###########################################################################################################
@@ -20,7 +20,7 @@ def search_input(logging_level=0 , search_method=0 , target=int, list=int):
     
     if logging_level == 1:
         logging.basicConfig(filename="binarySearch.log", level=logging.INFO)
-        logging.info('Started logs')
+        logging.info('Started logs..')
 
         if search_method == 0: # linear search
             print(lineSearch(list, target))
@@ -188,7 +188,6 @@ if __name__ == '__main__':
         print(f"{target} is not a valid target\n Ending program.")      
         time.sleep(2)
         
-        raise ValueError(f"Input must be int your input was {type(target)}")
 
 
 

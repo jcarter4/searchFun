@@ -1,3 +1,6 @@
+########################################
+# example usecase of searchFun script  #
+########################################
 
 from searchFun import *
 from os import system
@@ -26,8 +29,7 @@ try:
     search_method = int(search_method_in)
     system('clear')
 except ValueError as vErr:
-    system('clear')
-    print(f"{search_method_in} is not a valid target\n Ending program.")      
+    system('clear')  
     time.sleep(2)
     
     raise ValueError(f"Input must be int your input was {type(target)}")
